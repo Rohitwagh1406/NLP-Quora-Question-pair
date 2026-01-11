@@ -18,7 +18,7 @@ Identify which questions asked on Quora are duplicates of questions that have al
 ### Data Overview:
 Train.csv contains 5 columns : qid1, qid2, question1, question2, is_duplicate. Total we have 404290 entries. Splitted data into train and test with 70% and 30%.
 
-i derived some features from questions like no of common words, word share and some distances between questions with the help of word vectors. will discuss those below. You can check my total work [here](https://github.com/UdiBhaskar/Quora-Question-pair-similarity/blob/master/Quora%20Question%20pair%20similarity.ipynb)
+i derived some features from questions like no of common words, word share and some distances between questions with the help of word vectors. will discuss those below. You can check my total work [here](https://github.com/Rohitwagh1406/NLP-Quora-Question-pair)
 ### Some Analysis:
 - ##### Distribution of data points among output classes  
    ![No of Datapoints per Class](https://github.com/UdiBhaskar/Quora-Question-pair-similarity/blob/master/Images/output_30_1.png "No of Datapoints per Class") 
@@ -65,7 +65,7 @@ i derived some features from questions like no of common words, word share and s
 
 ### Machine Learning Models:
    - Trained a random model to check Worst case log loss and got log loss as 0.887699
-   - Trained some models and also tuned hyperparameters using Random and Grid search. I didnt used total train data to train my algorithms. Because of ram availability constraint in my PC, i sampled some data and Trained my models. below are models and their logloss scores. you can check total modelling and feature extraction [here](https://github.com/UdiBhaskar/Quora-Question-pair-similarity/blob/master/Quora%20Question%20pair%20similarity.ipynb)  
+   - Trained some models and also tuned hyperparameters using Random and Grid search. I didnt used total train data to train my algorithms. Because of ram availability constraint in my PC, i sampled some data and Trained my models. below are models and their logloss scores. you can check total modelling and feature extraction [here](https://github.com/Rohitwagh1406/NLP-Quora-Question-pair)  
    For below table BF - Basic features, AF - Advanced features, DF - Distance Features including WMD.
 
 | Model         | Features Used | Log Loss |
